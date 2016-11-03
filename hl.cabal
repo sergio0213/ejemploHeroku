@@ -1,0 +1,49 @@
+name:                hl
+version:             0.0.0
+synopsis:            Haskell web site.
+description:         Haskell web site.
+license:             BSD3
+license-file:        LICENSE
+author:              Chris Done
+maintainer:          chrisdone@gmail.com
+copyright:           2014 Chris Done
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable hl
+  hs-source-dirs:    src/
+  ghc-options:       -Wall
+                     -O2
+                     -fno-warn-type-defaults
+  main-is:           Main.hs
+  build-depends:     base >= 4 && < 5
+                   , blaze-html
+                   , blaze-markup
+                   , bytestring
+                   , conduit
+                   , deepseq
+                   , directory
+                   , fast-logger
+                   , filepath
+                   , foreign-store
+                   , hscolour
+                   , http-conduit
+                   , lifted-base
+                   , lucid
+                   , markdown
+                   , monad-extras
+                   , mtl
+                   , pandoc >= 1.12.3
+                   , pandoc-types
+                   , spoon
+                   , tagstream-conduit
+                   , text
+                   , text-icu
+                   , transformers
+                   , wai-logger
+                   , warp
+                   , xml-conduit
+                   , yesod
+                   , yesod-core
+                   , yesod-static
